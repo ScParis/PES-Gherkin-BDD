@@ -4,7 +4,7 @@ PES-Gherkin-BDD
 
 Um dos principais elementos, quando se trata de automação de testes, em BDD é o Gherkin.
 
-Os "testes automatizados" vem crecendo rapidamente, no mercado de qualidade de software, nos últimos anos.
+Os *"testes automatizados"* vem crecendo rapidamente, no mercado de qualidade de software, nos últimos anos.
 
 A automatização de rotinas repetitivas de teste é uma estratégia para que o testador não precise perder tanto tempo fazendo todo o fluxo de testes, novamente.
 
