@@ -50,4 +50,4 @@ jobs:
       
       - name: Run Test Suites
         run: |
-           robot -d ./log -L trace -v headless:chromium -v browser:true test/
+           robot -d ./log -L trace -v headless:chromium -v browser:false test/
