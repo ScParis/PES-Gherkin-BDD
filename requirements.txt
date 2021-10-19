@@ -1,0 +1,13 @@
+robotframework
+robotframework-assertion-engine
+robotframework-browser
+robotframework-databaselibrary
+robotframework-datadriver
+robotframework-difflibrary
+robotframework-extendedrequestslibrary
+robotframework-faker
+robotframework-playwright
+robotframework-pythonlibcore
+robotframework-requests
+robotframework-selenium2library
+robotframework-seleniumlibrary
