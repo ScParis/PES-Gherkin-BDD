@@ -1,0 +1,12 @@
+{"level":30,"time":"2021-10-19T21:22:48.374Z","pid":248216,"hostname":"scparis","msg":"Listening on 44789"}
+{"level":30,"time":"2021-10-19T21:22:48.769Z","pid":248216,"hostname":"scparis","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-10-19T21:22:48.779Z","pid":248216,"hostname":"scparis","msg":"Changed active context"}
+{"level":30,"time":"2021-10-19T21:22:48.957Z","pid":248216,"hostname":"scparis","msg":"Video path: undefined"}
+{"level":30,"time":"2021-10-19T21:22:48.957Z","pid":248216,"hostname":"scparis","msg":"Changed active page"}
+{"level":30,"time":"2021-10-19T21:22:52.516Z","pid":248216,"hostname":"scparis","msg":"Retrieved text for element xpath=//div[@class=\"a-section a-spacing-small a-spacing-top-small\"]//span[3] containing \"engenharia de software\""}
+{"level":30,"time":"2021-10-19T21:22:59.957Z","pid":248216,"hostname":"scparis","msg":"Changed active context"}
+{"level":30,"time":"2021-10-19T21:22:59.958Z","pid":248216,"hostname":"scparis","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-19T21:22:59.961Z","pid":248216,"hostname":"scparis","msg":"Changed active page"}
+{"level":30,"time":"2021-10-19T21:23:00.034Z","pid":248216,"hostname":"scparis","msg":"Changed active context"}
+{"level":30,"time":"2021-10-19T21:23:00.034Z","pid":248216,"hostname":"scparis","msg":"Changing current active page"}
+{"level":30,"time":"2021-10-19T21:23:00.034Z","pid":248216,"hostname":"scparis","msg":"Changed active page"}

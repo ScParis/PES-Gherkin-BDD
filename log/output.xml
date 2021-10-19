@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.8.10 on linux)" generated="20211019 18:22:47.885" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="/media/scherman/HD1/Particular/Faculdade/UniRitter/Disciplinas/2021_02/Práticas de Engenharia de Software/Trabalhos/PES-Gherkin-BDD/test">
+<suite id="s1-s1" name="AmazonBDD" source="/media/scherman/HD1/Particular/Faculdade/UniRitter/Disciplinas/2021_02/Práticas de Engenharia de Software/Trabalhos/PES-Gherkin-BDD/test/AmazonBDD.robot">
+<kw name="Start Browser Session" library="base" type="SETUP">
+<msg timestamp="20211019 18:22:48.467" level="TRACE">Arguments: [  ]</msg>
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20211019 18:22:48.468" level="TRACE">Arguments: [ &lt;SupportedBrowsers.chromium: 1&gt; | False ]</msg>
+<msg timestamp="20211019 18:22:48.468" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0}</msg>
+<msg timestamp="20211019 18:22:48.763" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0}</msg>
+<msg timestamp="20211019 18:22:48.763" level="TRACE">Return: 'browser=2193ea9d-4d33-4e0c-8bc5-b40a0e8f1a69'</msg>
+<status status="PASS" starttime="20211019 18:22:48.467" endtime="20211019 18:22:48.763"/>
+</kw>
+<msg timestamp="20211019 18:22:48.764" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:48.467" endtime="20211019 18:22:48.764"/>
+</kw>
+<test id="s1-s1-t1" name="Cenário #1: Busca por produto cadastrado">
+<kw name="DADO QUE eu acesso a página inicial" library="access">
+<msg timestamp="20211019 18:22:48.767" level="TRACE">Arguments: [  ]</msg>
+<kw name="New Page" library="Browser">
+<arg>about:blank</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211019 18:22:48.768" level="TRACE">Arguments: [ 'about:blank' ]</msg>
+<msg timestamp="20211019 18:22:48.998" level="INFO">Successfully initialized new page object and opened url: about:blank</msg>
+<msg timestamp="20211019 18:22:48.998" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg timestamp="20211019 18:22:48.998" level="DEBUG">Video is not enabled.</msg>
+<msg timestamp="20211019 18:22:48.998" level="TRACE">Return: 'page=e3858dc8-1648-47fc-b15a-f3f6b42183b0'</msg>
+<status status="PASS" starttime="20211019 18:22:48.768" endtime="20211019 18:22:48.998"/>
+</kw>
+<kw name="Go To" library="Browser">
+<arg>https://www.amazon.com.br/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20211019 18:22:48.999" level="TRACE">Arguments: [ 'https://www.amazon.com.br/' ]</msg>
+<msg timestamp="20211019 18:22:51.616" level="INFO">Succesfully opened URL https://www.amazon.com.br/</msg>
+<msg timestamp="20211019 18:22:51.616" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:48.999" endtime="20211019 18:22:51.616"/>
+</kw>
+<msg timestamp="20211019 18:22:51.616" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:48.767" endtime="20211019 18:22:51.616"/>
+</kw>
+<kw name="E o nome da Tab contenha o texto: &quot;Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.&quot;" library="access" sourcename="E o nome da Tab contenha o texto: &quot;${EXPECTED_TEXT}&quot;">
+<msg timestamp="20211019 18:22:51.617" level="TRACE">Arguments: [ ${EXPECTED_TEXT}='Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.' ]</msg>
+<kw name="Get Title" library="Browser">
+<var>${TITLE}</var>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20211019 18:22:51.617" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20211019 18:22:51.659" level="DEBUG">Active page title is: Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.</msg>
+<msg timestamp="20211019 18:22:51.659" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.041252851486206055 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg timestamp="20211019 18:22:51.659" level="TRACE">Return: 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.'</msg>
+<msg timestamp="20211019 18:22:51.659" level="INFO">${TITLE} = Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.</msg>
+<status status="PASS" starttime="20211019 18:22:51.617" endtime="20211019 18:22:51.659"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${TITLE}</arg>
+<arg>${EXPECTED_TEXT}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20211019 18:22:51.660" level="TRACE">Arguments: [ 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.' | 'Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.' ]</msg>
+<msg timestamp="20211019 18:22:51.660" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20211019 18:22:51.660" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.659" endtime="20211019 18:22:51.660"/>
+</kw>
+<msg timestamp="20211019 18:22:51.660" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.617" endtime="20211019 18:22:51.660"/>
+</kw>
+<kw name="QUANDO realizo a busca digitando o nome do item &quot;engenharia de software&quot; no campo de pesquisa" library="access" sourcename="QUANDO realizo a busca digitando o nome do item &quot;${ITEM}&quot; no campo de pesquisa">
+<msg timestamp="20211019 18:22:51.661" level="TRACE">Arguments: [ ${ITEM}='engenharia de software' ]</msg>
+<kw name="Fill Text" library="Browser">
+<arg>input[id="twotabsearchtextbox"]</arg>
+<arg>${ITEM}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``text`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211019 18:22:51.661" level="TRACE">Arguments: [ 'input[id="twotabsearchtextbox"]' | 'engenharia de software' ]</msg>
+<msg timestamp="20211019 18:22:51.662" level="INFO">Fills the text 'engenharia de software' in the given field.</msg>
+<msg timestamp="20211019 18:22:51.779" level="DEBUG">Fill text: engenharia de software</msg>
+<msg timestamp="20211019 18:22:51.779" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.661" endtime="20211019 18:22:51.779"/>
+</kw>
+<msg timestamp="20211019 18:22:51.779" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.660" endtime="20211019 18:22:51.779"/>
+</kw>
+<kw name="E clicar em Pesquisar" library="access">
+<msg timestamp="20211019 18:22:51.780" level="TRACE">Arguments: [  ]</msg>
+<kw name="Click" library="Browser">
+<arg>input[value="Ir"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<msg timestamp="20211019 18:22:51.780" level="TRACE">Arguments: [ 'input[value="Ir"]' ]</msg>
+<msg timestamp="20211019 18:22:51.781" level="DEBUG">Click options are: {"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}</msg>
+<msg timestamp="20211019 18:22:52.295" level="DEBUG">Clicked element: 'input[value="Ir"]' with options: '{"button": "left", "clickCount": 1, "force": false, "noWaitAfter": false}'</msg>
+<msg timestamp="20211019 18:22:52.295" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.780" endtime="20211019 18:22:52.296"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>xpath=//span[contains(text(), 'resultados')]</arg>
+<arg>visible</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211019 18:22:52.296" level="TRACE">Arguments: [ "xpath=//span[contains(text(), 'resultados')]" | &lt;ElementState.visible: 3&gt; | datetime.timedelta(seconds=2) ]</msg>
+<msg timestamp="20211019 18:22:52.478" level="INFO">Wait for Element with selector: xpath=//span[contains(text(), 'resultados')]</msg>
+<msg timestamp="20211019 18:22:52.479" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:52.296" endtime="20211019 18:22:52.479"/>
+</kw>
+<msg timestamp="20211019 18:22:52.479" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:51.779" endtime="20211019 18:22:52.479"/>
+</kw>
+<kw name="ENTÃO o resultado contendo o item &quot;engenharia de software&quot; deve ser exibido na página" library="access" sourcename="ENTÃO o resultado contendo o item &quot;${ITEM}&quot; deve ser exibido na página">
+<msg timestamp="20211019 18:22:52.480" level="TRACE">Arguments: [ ${ITEM}='engenharia de software' ]</msg>
+<kw name="Get Text" library="Browser">
+<var>${RESULT}</var>
+<arg>xpath=//div[@class="a-section a-spacing-small a-spacing-top-small"]//span[3]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.
+See the `Finding elements` section for details about the selectors.</doc>
+<msg timestamp="20211019 18:22:52.480" level="TRACE">Arguments: [ 'xpath=//div[@class="a-section a-spacing-small a-spacing-top-small"]//span[3]' ]</msg>
+<msg timestamp="20211019 18:22:52.518" level="DEBUG">Text received successfully.</msg>
+<msg timestamp="20211019 18:22:52.518" level="DEBUG">Assertion polling statistics:
+First element asserted in: 0.0375971794128418 seconds
+Total tries: 1
+Elapsed time in retries 0.0 seconds</msg>
+<msg timestamp="20211019 18:22:52.518" level="TRACE">Return: '"engenharia de software"'</msg>
+<msg timestamp="20211019 18:22:52.518" level="INFO">${RESULT} = "engenharia de software"</msg>
+<status status="PASS" starttime="20211019 18:22:52.480" endtime="20211019 18:22:52.518"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${RESULT}</arg>
+<arg>"${ITEM}"</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20211019 18:22:52.519" level="TRACE">Arguments: [ '"engenharia de software"' | '"engenharia de software"' ]</msg>
+<msg timestamp="20211019 18:22:52.519" level="DEBUG">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20211019 18:22:52.519" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:52.518" endtime="20211019 18:22:52.519"/>
+</kw>
+<msg timestamp="20211019 18:22:52.519" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:52.479" endtime="20211019 18:22:52.519"/>
+</kw>
+<kw name="Thinking And Take Screenshot" library="base" type="TEARDOWN">
+<arg>5</arg>
+<msg timestamp="20211019 18:22:52.520" level="TRACE">Arguments: [ ${TIMEOUT}='5' ]</msg>
+<kw name="Sleep" library="BuiltIn">
+<arg>${TIMEOUT}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211019 18:22:52.520" level="TRACE">Arguments: [ '5' ]</msg>
+<msg timestamp="20211019 18:22:57.521" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20211019 18:22:57.521" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:52.520" endtime="20211019 18:22:57.521"/>
+</kw>
+<kw name="Take Screenshot" library="Browser">
+<arg>fullPage=true</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window and saves it.</doc>
+<msg timestamp="20211019 18:22:57.523" level="TRACE">Arguments: [ fullPage=True ]</msg>
+<msg timestamp="20211019 18:22:57.524" level="DEBUG">Using robotframework-browser-screenshot-{index} to take screenshot.</msg>
+<msg timestamp="20211019 18:22:57.525" level="TRACE">robotframework-browser-screenshot-1</msg>
+<msg timestamp="20211019 18:22:59.922" level="DEBUG">Screenshot succesfully captured to: /media/scherman/HD1/Particular/Faculdade/UniRitter/Disciplinas/2021_02/Práticas de Engenharia de Software/Trabalhos/PES-Gherkin-BDD/log/browser/screenshot/robotframework-browser-screenshot-1.png</msg>
+<msg timestamp="20211019 18:22:59.923" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20211019 18:22:59.924" level="TRACE">Return: '/media/scherman/HD1/Particular/Faculdade/UniRitter/Disciplinas/2021_02/Práticas de Engenharia de Software/Trabalhos/PES-Gherkin-BDD/log/browser/screenshot/robotframework-browser-screenshot-1.png'</msg>
+<status status="PASS" starttime="20211019 18:22:57.522" endtime="20211019 18:22:59.924"/>
+</kw>
+<msg timestamp="20211019 18:22:59.925" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211019 18:22:52.519" endtime="20211019 18:22:59.926"/>
+</kw>
+<status status="PASS" starttime="20211019 18:22:48.764" endtime="20211019 18:22:59.926"/>
+</test>
+<doc>Caso de teste criado no modelo BDD</doc>
+<status status="PASS" starttime="20211019 18:22:47.959" endtime="20211019 18:23:00.177"/>
+</suite>
+<status status="PASS" starttime="20211019 18:22:47.889" endtime="20211019 18:23:00.185"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="AmazonBDD">Test.AmazonBDD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
