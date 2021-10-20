@@ -44,5 +44,4 @@ Obs.: É preciso entender que no Gherkin existem *"Keywords"* a serem utilizadas
 
 **Importante:**
     Note que, no padrão gherkin, são utilizadas personas (terceira pessoa) para executar a ação.
-
-    Com a utilização de personas, as interações ficam mais legíveis, também na geração de cada report, 
+    Com a utilização de personas, as interações ficam mais legíveis, também na geração de cada report.
