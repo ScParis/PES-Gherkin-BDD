@@ -1,5 +1,11 @@
 ***Settings***
 Documentation       Caso de teste criado no modelo BDD
+...                 Funcionalidade: Compra de item sem que o usuário esteja logado no sistema.
+...                     Como consumidor na plataforma Amazon.com.
+...                     Coviderson quer realizar a compra de um item, porém não está logado no sistema.
+...                     Coviderson acessa a página de compra de um item.
+...                     E clica para realizar a compra.
+...                     Então o sistema deve redirecionar para a página de login.
 
 # Resource            resources/base.robot
 Resource          ${EXECDIR}/resources/base.robot
@@ -8,7 +14,7 @@ Suite Setup     Start Browser Session
 Test Teardown   Thinking And Take Screenshot        5
 
 ***Test Cases***
-Cenário #1: Tentativa de compra sem login
+Cenário #1: Compra de item sem que o usuário esteja logado no sistema
 
     DADO QUE Coviderson acessa a página inicial do site da Amazon
     E ele confirma que o nome da Tab contém o texto: "Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais."
