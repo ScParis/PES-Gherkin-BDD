@@ -3,10 +3,7 @@ Documentation           Automation project base file
 
 #_ Community Libraries _#
 Library                 Browser
-Library                 Collections
-Library                 OperatingSystem
-Library                 DiffLibrary
-Library                 DateTime
+
 
 ################# _  Local Libraries _ #################
 
