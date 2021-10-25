@@ -51,9 +51,9 @@ Em Gherkin, esse fluxo seria assim:
 - **But (pt: Mas)**: No geral serve a mesma funcionalidade do “And”, porém é normalmente utilizado após uma validação negativa depois do “Then”;
 
 #### **Importante:**
-- Note que, no padrão gherkin, são utilizadas personas (terceira pessoa) para executar a ação, portanto utilizar nomes ou "Fulano" ajuda muito na interação da persona com o sistema;
+- Note que, no padrão gherkin, são utilizadas personas (terceira pessoa) para executar a ação, portanto utilizar nomes aleatórios ou "Fulano" ajuda muito na interação da persona com o sistema e no entendimento de quem está lendo a documentação;
 
-- Com a utilização de personas, as interações ficam mais legíveis, também na geração de cada report ou logs dos resultados de teste;
+- Com a utilização de personas, as interações ficam mais legíveis também na geração de cada report ou logs dos resultados de teste;
 
 # BDD
 ## O que é BDD?
