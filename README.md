@@ -80,4 +80,6 @@ Quando esse alinhamento é feito utilizando Gherkin, temos a segunite representa
 *E* ao escolher o item "Qualidade E Teste Em Software", ao clicar para comprar
 *MAS* sem estar logado, o sistema deve redirecionar para a página de login
 
-Em suma o BDD é um método 
+O BDD é o desenvolvimento guiado por comportamento, note que não tem a palavra "TESTE" aqui, portando escrever cenários em BDD deve ser uma especificação para guiar o processo de desenvolvimento. Então, se você utilizada o BDD somente para testar sua motivação não está correta, o ideal é você escrever cenários em BDD para enrriquecer o processo como um todo. Para ajudar no aprimoramento do time, e ajudar a tornar os times mais colaborativos, ou seja, o BDD vem antes de codificar o software, antes de codificar a funcionlidade.
+Os cenários são escritos para enriquecer as histórias de usuários, o Dev e o PO entendem qual é o  objetivo, os times ficam alinhados.
+Com as  expectativas alinhadas, o desenvolvimento será realizado orientados por este comportamento e consequentemente, testar orientado por este comportamento, aí sim existirá uma aplicação correta do BDD.
