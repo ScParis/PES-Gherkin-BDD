@@ -2,7 +2,7 @@
 Documentation       Login authentication
 
 ***Keywords***
-DADO QUE Coviderson acessa o site da Amazon
+DADO que Coviderson acessa o site da Amazon
     New Page        about:blank
     Go To       https://www.amazon.com.br/
 
