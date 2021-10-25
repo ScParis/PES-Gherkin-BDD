@@ -1,0 +1,85 @@
+PES-Gherkin-BDD
+
+# Conceito - Gherkin
+
+## O que é Gherkin?
+
+1. Gherkin não é BDD.
+2. É uma linguagem natural que pode ser compreendida por todos os times da organização.
+3. Segue a estrutura de *DADO*, *QUANDO* e *ENTÃO*.
+4. Pode ser interpretado por *pessoas* e *_máquinas_*, e também pode ser utilizado na automação de testes;
+
+---
+
+Um dos principais elementos, quando se trata de automação de testes, em BDD é o Gherkin.
+Os *"testes automatizados"* vem crecendo rapidamente, no mercado de qualidade de software, nos últimos anos.
+A automatização de rotinas repetitivas de teste é uma estratégia para que o testador não precise perder tanto tempo fazendo todo o fluxo de testes, novamente.
+Entendendo que o tempo é um recurso muito importante, pricipalmente nos tempos atuais, com as concorrências de mercado, a qualidade na entrega de sistemas vem se tornando cargo chefe para uma boa venda e também para manutenção do cliente.
+Tratando de padronização, documentação, e até mesmo na reciclagem de código e funcionalidades, o **Gherkin** é uma opção muito forte. 
+Por ser **focado na regra de negócio** ele é escrito em forma de passos que devem especificar cada etapa de interação do usuário com o sistema a ser testado.
+Ele também serve para **deixar nossos testes automatizados super fáceis de se ler, inclusive, para uma pessoa totalmente leiga no assunto**. A programação vai “por trás”, já que, literalmente, o tester vai escrever um código para executar, na prática, o que o Gherkin descreve.
+Em resumo, se trata de uma descição da regra de negócio do sistema, escrita passo-a-passo. 
+No exemplo abaixo, os passos para realizar login em uma aplivação *XPTO*, ficaria assim:
+
+1. Pré condição: Possuir uma conta no sistema
+2. Acessar a página de login
+3. Preencher credenciais
+4. Clicar no botão de login
+5. Esperar o login ser completado
+
+Em Gherkin, esse fluxo seria assim:
+
+1. Dado que “Fulano” possui uma conta no sistema
+2. E ele acessa a página de login
+3. E ele preenche suas credenciais válidas
+4. Quando ele aciona a opção de realizar login
+5. Então ele deve ser redirecionado para a página inicial logado
+
+Obs.: É preciso entender que no Gherkin existem *"Keywords"* a serem utilizadas para especificar a forma como cada step interage com o sistema. 
+
+- Given (pt: Dado): Utilizado para especificar uma pré condição, dentro desse step é feita a validação de uma condição antes de se prosseguir para os próximos passos. Por se tratar de uma pré condição, normalmente vem escrito no passado;
+- When  (pt: Quando): Utilizado quando será executada uma ação de que se espera uma reação vinda do sistema, que será validada no step “Then”. Este passo vem escrito no presente;
+- Then  (pt: Então): Valida se o esperado aconteceu. Segue sempre um passo do tipo “Quando”, pois aqui é validada a reação da ação recebida. Por se tratar do resultado esperado, normalmente vem escrito na forma de futuro próximo;
+- And (pt: E): Caso seja necessário mais uma interação com o sistema para complementar um fluxo, mas que não necessariamente se trata de uma ação ou reação, se utiliza “And”;
+- But (pt: Mas): No geral serve a mesma funcionalidade do “And”, porém é normalmente utilizado após uma validação negativa depois do “Then”;
+
+**Importante:**
+
+    Note que, no padrão gherkin, são utilizadas personas (terceira pessoa) para executar a ação, portanto utilizar nomes ou "Fulano" ajuda muito na interação da persona com o sistema;
+
+    Com a utilização de personas, as interações ficam mais legíveis, também na geração de cada report ou logs dos resultados de teste;
+
+# BDD
+## O que é BDD?
+
+1. BDD não é Gherkin;
+2. BDD não é voltado para teste;
+3. BDD não é automação de testes;
+4. BDD significa: Desenvolvimento Orientado por Comportamento, ou seja, seu foco é volado para o comportamento do software;
+5. Tem como objetivo auxiliar e melhorar a comunicação do time;
+6. Auxilia no qualidade de planejamento e implementações de features;
+
+Exemplo prático de BDD:
+
+PO envia ao time de QA o wireframe de uma determinada tela que será desenvolvida. Nesse momento o QA se reuine com o PO (e analista de negócios), para discutir os cenários daquela tela.
+
+Quando esse alinhamento é feito utilizando Gherkin, temos a segunite representação:
+
+- Storytelling:
+
+*SENDO* um visitante do site da Amazon
+*QUERO* realizar pesquisa de um determinado livro
+*PARA* que possa realizar a compra de um exemplar
+
+#### Cenário #1: Compra de item sem que o usuário esteja logado no sistema
+
+*DADO QUE* Coviderson acessa o site da Amazon
+*E* a Tab contém o texto: "Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais."
+*QUANDO* Coviderson realizar a busca pelo item "Qualidade E Teste Em Software" no campo de pesquisa
+*ENTÃO* o item "Qualidade E Teste Em Software" deverá aparecer na lista de resultados
+*E* ao escolher o item "Qualidade E Teste Em Software", ao clicar para comprar
+*MAS* sem estar logado, o sistema deve redirecionar para a página de login
+
+O BDD é o desenvolvimento guiado por comportamento, note que não tem a palavra "TESTE" aqui, portando escrever cenários em BDD deve ser uma especificação para guiar o processo de desenvolvimento. Então, se você utilizada o BDD somente para testar sua motivação não está correta, o ideal é você escrever cenários em BDD para enrriquecer o processo como um todo. Para ajudar no aprimoramento do time, e ajudar a tornar os times mais colaborativos, ou seja, o BDD vem antes de codificar o software, antes de codificar a funcionlidade.
+Os cenários são escritos para enriquecer as histórias de usuários, o Dev e o PO entendem qual é o  objetivo, os times ficam alinhados.
+Com as  expectativas alinhadas, o desenvolvimento será realizado orientados por este comportamento e consequentemente, testar orientado por este comportamento, aí sim existirá uma aplicação correta do BDD.
