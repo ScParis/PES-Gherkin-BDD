@@ -3,6 +3,7 @@ PES-Gherkin-BDD
 # Conceitos 
 - Gherkin
 - BDD
+
 ## O que é Gherkin?
 
 1. Gherkin não é BDD.
@@ -95,4 +96,4 @@ Com as  expectativas alinhadas, o desenvolvimento será realizado orientados por
 2. **Compartilhamento de conhecimento**: Com intensificação do trabalho em conjunto, possibilitado pelo BDD, e a troca de conhecimentos há grandes possibilidades de ter uma equipe multifuncional;
 3. **Documentação dinâmica**: Geralmente as equipe não documentam as funcionalidades, e regras de negócio, por entenderem que a manutenção destes artefatos são muitos custosas. Utilizando algum frameworks de BDD os artefatos são gerados de forma dinâmica, sem nenhum esforço adicional, e alguns, inclusive, geram relatórios em formato HTML, facilitando consultas posteriores;
 4. **Visão do todo**: O BDD sugere que os analistas, em parceira com os testadores, escrevam os cenários antes mesmo do desenvolvimento e implementação dos testes. Desta forma o objetivo do projeto fica mais claro para os desenvolvedores.
-5. **Uso de outras técnicas**: Com a adoção da metodologia de BDD, é possível também trabalhar em conjunto com o **TDD (Test-Driven Development)**, sendo assim um poderá complementar o outro resultando em um códico limpo e de fácil manutenção.
+5. **Uso de outras técnicas**: Com a adoção da metodologia de BDD, é possível também trabalhar em conjunto com o **TDD (Test-Driven Development ou Desenvolvimento orientado a teste)**, sendo assim um poderá complementar o outro resultando em um códico limpo e de fácil manutenção.
