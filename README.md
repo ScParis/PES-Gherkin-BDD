@@ -1,5 +1,30 @@
 PES-Gherkin-BDD
 
+<h3><strong>Ferramentas utilizadas:</strong></h3>
+<table data-v-3bc00e7e="" class="vertical-align-center table table-striped table-hover" style="height: 276px;">
+	<thead data-v-3bc00e7e="">
+		<tr data-v-3bc00e7e="" style="height: 37px;">
+			<th data-v-3bc00e7e="" scope="VSCode" class="text-center sortable group-divider" style="width: 305.645px; height: 37px;"><span data-v-3bc00e7e=""> VSCode </span></th>
+			<th data-v-3bc00e7e="" scope="Prezi" class="text-center sortable group-divider" style="width: 301.641px; height: 37px;"><span data-v-3bc00e7e=""> Prezi</span></th>
+			<th data-v-3bc00e7e="" scope="Robot" class="text-center sortable group-divider" style="width: 307.715px; height: 37px;"><span data-v-3bc00e7e=""> Robot Framework </span></th>
+		</tr>
+	</thead>
+	<tbody data-v-3bc00e7e="">
+		<tr data-v-3bc00e7e="" style="height: 165px;">
+			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 305.645px;"><center><a href="https://code.visualstudio.com/download" target="_blank" rel="noopener"> <img class="language-icon" src="https://i.redd.it/m8tfmccojwb31.png" width="146" height="145" style="vertical-align: center;" alt="visualstudio" /> </a></center></td>
+			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 301.641px;"><center><a href="https://prezi.com/p/edit/xntl3jxrsjga/" target="_blank" rel="noopener"> <img class="language-icon" src="https://o.remove.bg/downloads/618a26be-b48c-4f25-a423-e5dabf5b8410/prezi-removebg-preview.png" width="142" height="142" style="vertical-align: center;" alt="prezi" /></a></center></td>
+			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 307.715px;"><center><a href="https://robotframework.org/" target="_blank" rel="noopener"> <img class="language-icon" src="https://tomiturtiainen.gallerycdn.vsassets.io/extensions/tomiturtiainen/rf-intellisense/2.8.0/1572279203487/Microsoft.VisualStudio.Services.Icons.Default" width="148" height="148" style="vertical-align: center;" alt="robotframework" /> </a></center></td>
+		</tr>
+		<tr style="height: 37px;">
+			<td style="width: 305.645px; height: 37px;"></td>
+			<td style="width: 301.641px; height: 37px; text-align: center;"><span data-v-3bc00e7e="">&nbsp; &nbsp;"Apresenta&ccedil;&atilde;o"</span></td>
+			<td style="width: 307.715px; height: 37px;"></td>
+		</tr>
+	</tbody>
+</table>
+
+---
+
 # Conceitos 
 - Gherkin
 - BDD
