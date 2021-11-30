@@ -126,4 +126,4 @@ Com as  expectativas alinhadas, o desenvolvimento será realizado orientados por
 #### Ferramenta utilizada
 
 - **Robot Framework**
-- [Guia de instalação]{}
+- [Guia de instalação](https://github.com/ScParis/PES-Gherkin-BDD/blob/main/guide/instalation_guide.md)
