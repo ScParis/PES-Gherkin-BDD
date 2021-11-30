@@ -12,7 +12,7 @@ PES-Gherkin-BDD
 	<tbody data-v-3bc00e7e="">
 		<tr data-v-3bc00e7e="" style="height: 165px;">
 			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 305.645px;"><center><a href="https://code.visualstudio.com/download" target="_blank" rel="noopener"> <img class="language-icon" src="https://i.redd.it/m8tfmccojwb31.png" width="146" height="145" style="vertical-align: center;" alt="visualstudio" /> </a></center></td>
-			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 301.641px;"><center><a href="https://prezi.com/p/edit/xntl3jxrsjga/" target="_blank" rel="noopener"> <img class="language-icon" src="https://o.remove.bg/downloads/618a26be-b48c-4f25-a423-e5dabf5b8410/prezi-removebg-preview.png" width="142" height="142" style="vertical-align: center;" alt="prezi" /></a></center></td>
+			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 301.641px;"><center><a href="https://prezi.com/p/edit/xntl3jxrsjga/" target="_blank" rel="noopener"> <img class="language-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Prezi_logo_transparent_2012.svg/245px-Prezi_logo_transparent_2012.svg.png" width="142" height="142" style="vertical-align: center;" alt="prezi" /></a></center></td>
 			<td data-v-3bc00e7e="" class="" style="height: 165px; width: 307.715px;"><center><a href="https://robotframework.org/" target="_blank" rel="noopener"> <img class="language-icon" src="https://tomiturtiainen.gallerycdn.vsassets.io/extensions/tomiturtiainen/rf-intellisense/2.8.0/1572279203487/Microsoft.VisualStudio.Services.Icons.Default" width="148" height="148" style="vertical-align: center;" alt="robotframework" /> </a></center></td>
 		</tr>
 		<tr style="height: 37px;">
@@ -126,4 +126,4 @@ Com as  expectativas alinhadas, o desenvolvimento será realizado orientados por
 #### Ferramenta utilizada
 
 - **Robot Framework**
-- [Guia de instalação]{}
+- [Guia de instalação](https://github.com/ScParis/PES-Gherkin-BDD/blob/main/guide/instalation_guide.md)
